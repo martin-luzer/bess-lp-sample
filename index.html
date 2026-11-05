@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>GRID RESERVE｜高圧・特別高圧 系統用蓄電所（提案サンプル）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;500;600&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=2">
+<script type="importmap">{ "imports": { "three": "./vendor/three.module.min.js", "three/addons/": "./vendor/addons/" } }</script>
+</head>
+<body>
+
+<p class="sample-bar">提案用サンプル（架空の会社・架空の数値）｜高圧・特別高圧の系統用蓄電所</p>
+
+<header class="header">
+  <a class="logo" href="#"><span class="logo-mark" aria-hidden="true"></span>GRID RESERVE</a>
+  <nav class="nav"><a href="#revenue">収益の仕組み</a><a href="#tax">税制</a><a href="#sim">試算</a><a href="#flow">導入の流れ</a><a href="#faq">よくある質問</a></nav>
+  <a class="header-cta" href="#contact">資料請求</a>
+</header>
+
+<!-- 1. 3Dの最初の画面（スクロールで進む） -->
+<section class="hero" id="hero">
+  <div class="hero-stage">
+    <canvas class="hero-canvas" aria-hidden="true"></canvas>
+    <img class="hero-poster" src="photos/station.jpg" alt="" width="1600" height="900">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="beat beat-1">
+      <p class="eyebrow">高圧・特別高圧 系統用蓄電所</p>
+      <h1 class="hero-title"><span class="l">電力を、</span><span class="l">資産に。</span></h1>
+      <p class="hero-sub">送電網につなぐ大型の蓄電所を、<br>事業として持つ。用地の確保から<br>運用まで、ひとつの窓口で。</p>
+      <div class="hero-actions"><a class="btn btn-glow" href="#contact">資料を請求する</a><a class="btn-text" href="#sim">収益を試算する</a></div>
+    </div>
+    <div class="beat beat-2"><p class="beat-big"><span class="l">安い時間に、ためる。</span><span class="l">高い時間に、売る。</span></p></div>
+    <div class="beat beat-3"><p class="beat-big"><span class="l">3つの電力市場から、</span><span class="l">収益を積み上げる。</span></p><p class="beat-small">2MW／8MWh 級からご提案します</p></div>
+    <div class="hero-progress" aria-hidden="true"><i></i></div>
+    <p class="scroll-hint" aria-hidden="true">SCROLL</p>
+  </div>
+</section>
+
+<!-- 2. 数字 -->
+<section class="stats">
+  <div class="stat"><span class="stat-num"><b data-count="2">0</b><small>MW〜</small></span><span class="stat-label">ご提案できる出力の規模</span></div>
+  <div class="stat"><span class="stat-num"><b data-count="3">0</b><small>市場</small></span><span class="stat-label">卸電力・需給調整・容量</span></div>
+  <div class="stat"><span class="stat-num"><b data-count="20">0</b><small>年</small></span><span class="stat-label">運用を想定した設計期間</span></div>
+  <div class="stat"><span class="stat-num"><b data-count="24">0</b><small>時間</small></span><span class="stat-label">遠隔監視による運用体制</span></div>
+  <p class="note">※数値はサンプルです（架空の会社）。</p>
+</section>
+
+<!-- 3. 大きな一文（スクロールで文字が灯る） -->
+<section class="manifesto">
+  <p class="reveal-text">再生可能エネルギーが増えるほど、電力は「余る時間」と「足りない時間」に分かれていきます。その差を埋める蓄電所は、電力網を支える設備であり、長く収益を生む事業資産でもあります。</p>
+</section>
+
+<!-- 4. 3つの収益源 -->
+<section class="revenue" id="revenue">
+  <div class="sec-head"><p class="eyebrow">Revenue</p><h2 class="h2">収益は、3つの市場から。</h2><p class="lead">1つの市場に頼らず、時間帯や市況に合わせて組み合わせます。</p></div>
+  <div class="flow-diagram" aria-hidden="true">
+    <svg viewBox="0 0 900 260" preserveAspectRatio="xMidYMid meet">
+      <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#3EE6FF" stop-opacity="0"/><stop offset=".5" stop-color="#3EE6FF"/><stop offset="1" stop-color="#3EE6FF" stop-opacity="0"/></linearGradient></defs>
+      <g class="nodes">
+        <rect x="20" y="95" width="170" height="70" rx="14"/><text x="105" y="137">送電網</text>
+        <rect x="365" y="80" width="170" height="100" rx="18" class="core"/><text x="450" y="137">蓄電所</text>
+        <rect x="710" y="10" width="170" height="60" rx="14"/><text x="795" y="47">卸電力市場</text>
+        <rect x="710" y="100" width="170" height="60" rx="14"/><text x="795" y="137">需給調整市場</text>
+        <rect x="710" y="190" width="170" height="60" rx="14"/><text x="795" y="227">容量市場</text>
+      </g>
+      <path class="wire" d="M190 130 H365"/><path class="wire" d="M535 120 C620 120 620 40 710 40"/><path class="wire" d="M535 130 H710"/><path class="wire" d="M535 140 C620 140 620 220 710 220"/>
+      <path class="pulse" d="M190 130 H365"/><path class="pulse d2" d="M535 120 C620 120 620 40 710 40"/><path class="pulse d3" d="M535 130 H710"/><path class="pulse d4" d="M535 140 C620 140 620 220 710 220"/>
+    </svg>
+  </div>
+  <div class="cards">
+    <article class="card glow-card"><p class="card-no">01</p><h3>卸電力市場</h3><p>電気が安い昼に充電し、高くなる夕方から夜に放電。価格差を収益にします（アービトラージ）。</p></article>
+    <article class="card glow-card"><p class="card-no">02</p><h3>需給調整市場</h3><p>電力網の周波数を保つための調整力を提供し、その対価を受け取ります。</p></article>
+    <article class="card glow-card"><p class="card-no">03</p><h3>容量市場</h3><p>将来の供給力として登録し、kWの価値に応じた対価を受け取ります。</p></article>
+  </div>
+</section>
+
+<!-- 5. 写真の帯（スクロールで寄る） -->
+<section class="photo-band">
+  <div class="photo-frame"><img src="photos/control.jpg" alt="電力市場の価格と充放電を監視する運用室" width="1600" height="900"></div>
+  <p class="photo-caption"><span class="eyebrow">Operation</span>充放電の計画から市場への入札まで、24時間の遠隔監視で運用します。</p>
+</section>
+
+<!-- 6. 低圧との違い -->
+<section class="compare">
+  <div class="sec-head"><p class="eyebrow">High voltage</p><h2 class="h2">高圧・特別高圧に、絞っています。</h2><p class="lead">検索で多く出てくる低圧の蓄電池とは、規模も参加できる市場も違います。</p></div>
+  <div class="table-wrap">
+    <table class="cmp">
+      <thead><tr><th></th><th>低圧</th><th class="hl">高圧・特別高圧（当社）</th></tr></thead>
+      <tbody>
+        <tr><th>出力</th><td>50kW未満</td><td class="hl">2MW以上（例：2MW／8MWh）</td></tr>
+        <tr><th>投資額の目安</th><td>2,000万円台〜</td><td class="hl">数億円〜（規模により個別にお見積り）</td></tr>
+        <tr><th>市場への参加</th><td>アグリゲーターを通じて</td><td class="hl">各市場に直接参加しやすい</td></tr>
+        <tr><th>主な検討者</th><td>個人・小規模の法人</td><td class="hl">法人・事業会社・投資家</td></tr>
+        <tr><th>用地</th><td>小さな土地でも可</td><td class="hl">一定の広さと系統の空き容量が必要</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">※一般的な目安です。案件ごとに条件が異なります。</p>
+</section>
+
+<!-- 7. 税制 -->
+<section class="tax" id="tax">
+  <div class="tax-inner glow-card">
+    <p class="eyebrow">Tax</p>
+    <h2 class="h2">税制の活用も、条件から一緒に確認します。</h2>
+    <p>系統用蓄電池は、税制の改正により、条件を満たすと即時償却などの対象になる場合があります。ただし、投資額の要件、法人の区分、対象となる設備の範囲など、確認すべき条件が多くあります。</p>
+    <ul class="checks">
+      <li>どの税制の対象になりうるか（制度ごとに要件が異なります）</li>
+      <li>取得価額・投資計画の要件を満たすか</li>
+      <li>適用できる年度と、申請のタイミング</li>
+    </ul>
+    <p class="note">※税制の適用可否は、必ず税理士・公認会計士にご確認ください。当社は顧問の専門家と連携してご説明します（サンプルの記載）。</p>
+  </div>
+</section>
+
+<!-- 8. 試算 -->
+<section class="sim" id="sim">
+  <div class="sec-head"><p class="eyebrow">Simulation</p><h2 class="h2">規模を動かして、試算する。</h2><p class="lead">出力（MW）を選ぶと、想定の収益が変わります。</p></div>
+  <div class="sim-box glow-card">
+    <label class="sim-label" for="mw">出力 <b><output id="mwOut">4</output> MW</b>（容量 <output id="mwhOut">16</output> MWh）</label>
+    <input id="mw" type="range" min="2" max="20" step="1" value="4">
+    <div class="sim-results">
+      <div><span>想定の投資額</span><b><output id="capex">13.0</output><small>億円</small></b></div>
+      <div><span>想定の年間収益</span><b><output id="rev">2.3</output><small>億円</small></b></div>
+      <div><span>想定の表面利回り</span><b><output id="yield">17.7</output><small>%</small></b></div>
+    </div>
+    <div class="sim-bars" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+    <p class="sim-legend"><span class="k k1"></span>卸電力 <span class="k k2"></span>需給調整 <span class="k k3"></span>容量</p>
+    <p class="note">※架空の前提で計算した試算例です。実際の収益は市場価格・運用条件によって大きく変わり、将来の収益を保証するものではありません。</p>
+  </div>
+</section>
+
+<!-- 9. 導入の流れ -->
+<section class="flow" id="flow">
+  <div class="sec-head"><p class="eyebrow">One stop</p><h2 class="h2">用地から運用まで、ひとつの窓口で。</h2></div>
+  <ol class="steps">
+    <li><span class="step-no">01</span><div><h3>用地・系統の調査</h3><p>候補地の系統の空き容量、接続にかかる費用と期間を調べます。</p></div></li>
+    <li><span class="step-no">02</span><div><h3>事業計画と試算</h3><p>市場の組み合わせと収益の試算、資金計画をご提案します。</p></div></li>
+    <li><span class="step-no">03</span><div><h3>申請・設計・施工</h3><p>電力会社への申請から、造成・据付・試験までを管理します。</p></div></li>
+    <li><span class="step-no">04</span><div><h3>市場への参加</h3><p>各市場への登録と、充放電の計画づくりを行います。</p></div></li>
+    <li><span class="step-no">05</span><div><h3>運用・保守</h3><p>24時間の遠隔監視と、定期点検・故障時の対応を行います。</p></div></li>
+  </ol>
+</section>
+
+<!-- 10. リスク -->
+<section class="risk">
+  <div class="sec-head"><p class="eyebrow">Risk</p><h2 class="h2">リスクも、先にお伝えします。</h2></div>
+  <div class="risk-grid">
+    <div class="glow-card"><h3>市場価格の変動</h3><p>電力価格や市場の制度が変わると、収益も変わります。複数の市場を組み合わせ、試算は複数の前提で示します。</p></div>
+    <div class="glow-card"><h3>電池の劣化</h3><p>使い方によって容量が少しずつ減ります。劣化を見込んだ計画と、メーカー保証の確認を行います。</p></div>
+    <div class="glow-card"><h3>系統の接続</h3><p>空き容量や工事の都合で、接続の時期がずれることがあります。調査の段階で見通しをお伝えします。</p></div>
+  </div>
+</section>
+
+<!-- 11. 写真と相談 -->
+<section class="meeting">
+  <div class="photo-frame"><img src="photos/meeting.jpg" alt="投資の試算を説明する担当者" width="1600" height="900"></div>
+  <div class="meeting-body"><p class="eyebrow">Consulting</p><h2 class="h2">初回は、対面でご説明します。</h2><p>狙いと条件を伺い、候補地と規模に合わせた試算をお持ちします。オンラインでのご相談も可能です。</p></div>
+</section>
+
+<!-- 12. FAQ -->
+<section class="faq" id="faq">
+  <div class="sec-head"><p class="eyebrow">FAQ</p><h2 class="h2">よくある質問</h2></div>
+  <details><summary>土地を持っていなくても検討できますか？</summary><p>できます。用地の候補探しからご相談いただけます。</p></details>
+  <details><summary>投資額はどのくらい必要ですか？</summary><p>規模によりますが、2MW級で数億円からが目安です。条件に合わせて個別にお見積りします。</p></details>
+  <details><summary>融資やリースは使えますか？</summary><p>金融機関の融資やリースを使える場合があります。資金計画とあわせてご相談ください。</p></details>
+  <details><summary>運転開始までどのくらいかかりますか？</summary><p>系統の接続条件によりますが、調査から運転開始まで1年以上かかることが一般的です。</p></details>
+  <details><summary>低圧の蓄電池とは何が違いますか？</summary><p>出力・投資額・参加できる市場が異なります。上の比較表をご覧ください。</p></details>
+</section>
+
+<!-- 13. 資料請求 -->
+<section class="contact" id="contact">
+  <div class="contact-inner glow-card">
+    <p class="eyebrow">Contact</p>
+    <h2 class="h2">資料請求・個別相談</h2>
+    <p class="lead">事業の概要と試算例をまとめた資料をお送りします。</p>
+    <form class="form" onsubmit="event.preventDefault(); this.querySelector('.form-done').hidden = false;">
+      <label>会社名<input type="text" name="company" autocomplete="organization" placeholder="例）株式会社〇〇"></label>
+      <label>お名前<input type="text" name="name" autocomplete="name" placeholder="例）山田 太郎"></label>
+      <label>メールアドレス<input type="email" name="email" autocomplete="email" placeholder="例）name@example.com"></label>
+      <fieldset><legend>ご検討の内容</legend>
+        <label class="chip"><input type="checkbox" name="topic" value="invest">投資として</label>
+        <label class="chip"><input type="checkbox" name="topic" value="tax">税制の活用</label>
+        <label class="chip"><input type="checkbox" name="topic" value="land">用地の活用</label>
+      </fieldset>
+      <button class="btn btn-glow" type="submit">資料を請求する（無料）</button>
+      <p class="form-done" hidden>サンプルのため、送信はされません。</p>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="logo"><span class="logo-mark" aria-hidden="true"></span>GRID RESERVE</p>
+  <p>提案用サンプル：会社名・数値・試算・人物はすべて架空です。写真はAI生成、3DはWebGLで描いた模型です。本ページは投資を勧誘するものではありません。</p>
+</footer>
+
+<a class="float-cta" href="#contact">資料請求</a>
+
+<script src="vendor/gsap.min.js?v=1"></script>
+<script src="vendor/ScrollTrigger.min.js?v=1"></script>
+<script type="module" src="main.js?v=2"></script>
+</body>
+</html>
